@@ -13,4 +13,3 @@ _putchar(number[i]);
 
 _putchar('\n');
 }
-
