@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * main - check the _isalpha function
- * Return: Always 0
+ * print_1110 - prints "1110" followed by a new line.
  */
-int main(void)
+void print_1110(void)
 {
-int r;
+char number[] = "1110";
+int i;
 
-r = _isalpha('H');
-printf("%d\n", r);
+for (i = 0; i < 4; i++)
+_putchar(number[i]);
 
-return (0);
+_putchar('\n');
 }
+
