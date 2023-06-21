@@ -1,15 +1,24 @@
 #include "main.h"
 
 /**
- * print_1110 - prints "1110" followed by a new line.
- */
-void print_1110(void)
+* _isalpha - Tests for alphabet characters
+* @c: Parameter being tested
+* Return: returns the result of the evaluation
+*/
+
+int _isalpha(int c)
 {
-char number[] = "1110";
-int i;
+char ch = c;
+int result;
 
-for (i = 0; i < 4; i++)
-_putchar(number[i]);
+if ((ch < 'A') || (ch > 'z'))
+{
+result = 0;
+}
+else
+{
+result = 1;
+}
 
-_putchar('\n');
+return (result);
 }
