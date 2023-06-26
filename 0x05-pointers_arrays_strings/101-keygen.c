@@ -1,23 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * main - entry point generates a random password
+ * main - entry point to generate a random valid password
  *
- * Return: the generated password
+ * Return: 0
  */
 int main(void)
 {
-char c;
-int x;
+char password[7];
+int i, sum = 0;
 
 srand(time(0));
-while (x <= 2645)
+
+for (i = 0; i < 7; i++)
 {
-c = rand() % 128;
-x += c;
-putchar(c);
+password[i] = rand() % 94 + 33;  // Generate random ASCII characters from '!' to '~'
+sum += password[i];
 }
-putchar(2772 - x);
-return (0);
+
+password[7] = '\0';  // Add null terminator to make it a valid C string
+
+printf("%s\n", password);
+printf("Sum: %d\n", sum);
+
+return 0;
 }
