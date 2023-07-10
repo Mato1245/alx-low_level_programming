@@ -33,5 +33,9 @@ cpy[index] = str[index];
 cpy[len] = '\0';
 
 return (cpy);
-
+}
+int main(void)
+{
+    // Test the _strdup function here if needed
+    return 0;
 }
