@@ -1,19 +1,19 @@
 #include "main.h"
 /**
 * _puts - Entry point- prints a string
-* @str: the string input
+* @s: the string input
 *
 * Return: returns the length of a string
 */
-int _puts(char *str)
+void _puts(char *s)
 {
 int x = 0;
 
-while (str[x] != '\0')
+while (s[x] != '\0')
 {
-_putchar(str[x]);
+_putchar(s[x]);
 x++;
 }
-return (x);
+return (0);
 _putchar('\n');
 }
